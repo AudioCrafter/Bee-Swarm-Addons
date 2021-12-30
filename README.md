@@ -45,10 +45,19 @@ Removes the top bar, toggels always on top mode.
 
 ### - Timers:
 
-the buttons on the left are start buttons for the thimer that appears on the right side of the buttons.
+(step 2 and 3 can be swapped)
 
-the buttons of the corresponding ingame things should be pressed right before or after you do the ingame action. 
-unfortunately i dont think this process can be automated easyly, so the timers have to be started manualy.
+1. in Beeswarm, go for example to to the Beesmas Feast
+
+2. press E to start the ingame timer
+
+![startingametimer](https://cdn.discordapp.com/attachments/725622009907642420/926108958052216832/unknown.png)
+
+3. in Bee Swarm Addons, press the corresponding button to the ingame action. 
+
+![StartbsaTimer](https://cdn.discordapp.com/attachments/725622009907642420/926110850811564042/unknown.png)
+
+4. The timer starts and you get an alert if things are ready to be done again! :)
 
 
 
