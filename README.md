@@ -8,6 +8,8 @@
 - Opacity Control
 - Debug Mode to test sounds, timers 
 
+![demoInage](https://cdn.discordapp.com/attachments/725622009907642420/925971092005351474/unknown.png)
+
 
 # Explanation of the Features 
 - Stockings, Snowbear, Snow Canon, Beesmas Feast, Candles, Honey Wreath, Wealth clock: 
@@ -54,27 +56,29 @@ unfortunately i dont think this process can be automated easyly, so the timers h
 
 ### Settings:
 
-- **Always on top**:        Program will be always on top
-- **Overlay Mode**:         Removes the top bar, toggels always on top mode.
-- **Alerts**:               Toggle alert sounds for Mondo and Puffshrooms.
-- **Stop all timers**:      Resets & Stops all timers.
-- **Settings**:             Opens settings menu. (Not functioning yet).
-- **Show Volume Slider**:   Shows / Hides Volume control.
-- **Show Opacity slider**:  Shows / Hides Opacity control.
-- **Night mode**:           Mutes all sound for eg. macroing overnight. 
-- **Visibility**:           Show / Hide single timers.
-- **Icons**:                Shows / Hides Icons left to the buttons.
+- ***Always on top***:        Program will be always on top
+- ***Overlay Mode***:         Removes the top bar, toggels always on top mode.
+- ***Alerts***:               Toggle alert sounds for Mondo and Puffshrooms.
+- ***Stop all timers***:      Resets & Stops all timers.
+- ***Settings**:             Opens settings menu. (Not functioning yet).
+- ***Show Volume Slider***:   Shows / Hides Volume control.
+- ***Show Opacity slider***:  Shows / Hides Opacity control.
+- ***Night mode***:           Mutes all sound for eg. macroing overnight. 
+- ***Visibility***:           Show / Hide single timers.
+- ***Icons***:                Shows / Hides Icons left to the buttons.
 
 ### Debug: 
 
-- **Test sound**:           Plays sounds of the timers.
-- **Debug Mode**:           Enables / Disables Debug mode. 
+- ***Test sound***:           Plays sounds of the timers.
+- ***Debug Mode***:           Enables / Disables Debug mode. 
 
 # Explanation of the Debug mode
 
-- **TIME**:                 Displays time which the alerts use. Should be system time.
-- **Select sound to play**: You can select a sound to play to test the player. 
-- **Test countdown**:       A 10 second countdown to test the timers.
-- **player**:               Windows mediaplayer integration.
+- ***TIME***:                 Displays time which the alerts use. Should be system time.
+- ***Select sound to play***: You can select a sound to play to test the player. 
+- ***Test countdown***:       A 10 second countdown to test the timers.
+- ***player***:               Windows mediaplayer integration.
 
+
+![DebugImage](https://cdn.discordapp.com/attachments/725622009907642420/925971328677314610/unknown.png)
 
