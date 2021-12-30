@@ -35,10 +35,9 @@ Removes the top bar, toggels always on top mode.
 
 # How to install
 
-1. Download zip file from [here](https://github.com/AudioCrafter/Bee-Swarm-Addons/raw/master/Beeswarm%20Addons%20Installer1.2.1.msi)
-2. unzip file 
-3. open the ``Beeswarm Addons Installer.msi`` file
-4. Follow the setup guide
+1. Download the file from the file section on the top of the site or [here](https://github.com/AudioCrafter/Bee-Swarm-Addons/raw/master/Beeswarm%20Addons%20Installer1.2.2.msi)
+2. open the ``Beeswarm Addons Installer.msi`` file
+3. Follow the setup guide
 
 
 # How to use
