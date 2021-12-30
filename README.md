@@ -14,7 +14,7 @@
 # Explanation of the Features 
 - Stockings, Snowbear, Snow Canon, Beesmas Feast, Candles, Honey Wreath, Wealth clock: 
 
-Timer until the ingame actions are ready to be done again, for every timer specific alert gets played when it hits 0.
+Timer until the ingame actions are ready to be done again, for every timer a specific alert gets played when it hits 0.
 
 - kick timer:
 
