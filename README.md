@@ -69,7 +69,7 @@ Removes the top bar, toggels always on top mode.
 - ***Overlay Mode***:         Removes the top bar, toggels always on top mode.
 - ***Alerts***:               Toggle alert sounds for Mondo and Puffshrooms.
 - ***Stop all timers***:      Resets & Stops all timers.
-- ***Settings**:             Opens settings menu. (Not functioning yet).
+- ***Settings***:             Opens settings menu.
 - ***Show Volume Slider***:   Shows / Hides Volume control.
 - ***Show Opacity slider***:  Shows / Hides Opacity control.
 - ***Night mode***:           Mutes all sound for eg. macroing overnight. 
