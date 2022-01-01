@@ -1,0 +1,105 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Beeswarm_timer_v3.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SettingOverlayMode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="asdasd" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Stockingstime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3600</Value>
+    </Setting>
+    <Setting Name="SnowbearTime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5400</Value>
+    </Setting>
+    <Setting Name="SnowcanonTime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">7200</Value>
+    </Setting>
+    <Setting Name="BeesmasFeastTime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5400</Value>
+    </Setting>
+    <Setting Name="CandlesTime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">14400</Value>
+    </Setting>
+    <Setting Name="WreathTime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1800</Value>
+    </Setting>
+    <Setting Name="WealthTime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3600</Value>
+    </Setting>
+    <Setting Name="KickTime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1080</Value>
+    </Setting>
+    <Setting Name="MondoTimeMinute" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">57</Value>
+    </Setting>
+    <Setting Name="Puffshroom15minute" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="Puffshroom45minute" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">45</Value>
+    </Setting>
+    <Setting Name="StockingsAlertURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Application.StartupPath + "\\sounds\\stockings.wav\\"</Value>
+    </Setting>
+    <Setting Name="SnowbearAlertURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Application.StartupPath + "\\sounds\\snowbear.wav\\"</Value>
+    </Setting>
+    <Setting Name="SnowcanonAlertURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Application.StartupPath + "\\sounds\\snowcanon.wav\\";</Value>
+    </Setting>
+    <Setting Name="FeastAlertURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Application.StartupPath + "\\sounds\\beesmas feast.wav\\";</Value>
+    </Setting>
+    <Setting Name="CandlesAlertURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Application.StartupPath + "\\sounds\\Candles.wav\\";</Value>
+    </Setting>
+    <Setting Name="WreathAlertURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Application.StartupPath + "\\sounds\\wreath.wav\\";</Value>
+    </Setting>
+    <Setting Name="WealthAlertURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Application.StartupPath + "\\sounds\\wealth clock.wav\\"</Value>
+    </Setting>
+    <Setting Name="KickAlertURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Application.StartupPath + "\\sounds\\you should move.wav\\"</Value>
+    </Setting>
+    <Setting Name="MondoAlertURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Application.StartupPath + "\\sounds\\mondo.wav\\"</Value>
+    </Setting>
+    <Setting Name="PuffshroomsAlertURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Application.StartupPath + "\\sounds\\puffshrooms.wav\\</Value>
+    </Setting>
+    <Setting Name="Volume" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="tenbeesMMtime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">7200</Value>
+    </Setting>
+    <Setting Name="fiveteenbeesMMtime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">14400</Value>
+    </Setting>
+    <Setting Name="thirtyfivebeesMMtime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">28800</Value>
+    </Setting>
+    <Setting Name="NightMMtime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">28800</Value>
+    </Setting>
+    <Setting Name="tenbeesMMalertURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Application.StartupPath + "\\sounds\\tenbeesMMready.wav\\";</Value>
+    </Setting>
+    <Setting Name="fiveteenbeesMMalertURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Application.StartupPath + "\\sounds\\fiveteenbeedMMready.wav\\";</Value>
+    </Setting>
+    <Setting Name="thirtyfivebeesMMalertURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Application.StartupPath + "\\sounds\\thirtyfivebeesMMready.wav\\";</Value>
+    </Setting>
+    <Setting Name="NightMMalertURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Application.StartupPath + "\\sounds\\nightmmready.wav\\"</Value>
+    </Setting>
+    <Setting Name="Einstellung" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

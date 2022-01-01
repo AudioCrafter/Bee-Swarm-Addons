@@ -1,0 +1,24 @@
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\bin\Debug\Interop.WMPLib.dll
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\obj\Debug\Beeswarm Addons V1.csproj.SuggestedBindingRedirects.cache
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\obj\Debug\Interop.WMPLib.dll
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\obj\Debug\Beeswarm Addons V1.csproj.ResolveComReference.cache
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\obj\Debug\Beeswarm_timer_v3.BeeswarmAddonsV1.resources
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\obj\Debug\Beeswarm_timer_v3.Form2.resources
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\obj\Debug\Beeswarm_timer_v3.settingswindow.resources
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\obj\Debug\Beeswarm_timer_v3.UserControl1.resources
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\obj\Debug\Beeswarm Addons V1.csproj.GenerateResource.cache
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\obj\Debug\Beeswarm Addons V1.csproj.CoreCompileInputs.cache
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\obj\Debug\Beeswarm_timer_v3.Form3.resources
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\obj\Debug\Beeswarm_timer_v3.Properties.Resources.resources
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\obj\Debug\Beeswarm_timer_v3.bugReportWindows.resources
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\bin\Debug\Beeswarm Addons v1.2.1.exe.config
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\bin\Debug\Beeswarm Addons v1.2.1.exe.manifest
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\bin\Debug\Beeswarm Addons v1.2.1.application
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\bin\Debug\Beeswarm Addons v1.2.1.exe
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\bin\Debug\Beeswarm Addons v1.2.1.pdb
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\obj\Debug\Beeswarm Addons v1.2.1.exe.manifest
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\obj\Debug\Beeswarm Addons v1.2.1.application
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\obj\Debug\Beeswarm Addons v1.2.1.exe
+C:\Users\mehl\source\repos\Beeswarm timer v3\Beeswarm timer v3\obj\Debug\Beeswarm Addons v1.2.1.pdb

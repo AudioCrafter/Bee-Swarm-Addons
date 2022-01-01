@@ -1,6 +1,13 @@
 ﻿using System;
-using System.Runtime.InteropServices;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 
 
@@ -35,42 +42,19 @@ namespace Beeswarm_timer_v3
         int wrathTimeLeft;
         int kickTimeLeft;
         int WealthClockTimeLeft;
-        int DEBUGTestTimeLeft;
-
-        int MondoAlertMinute;
-        int puffshroom15AlertMinute;
-        int puffshroom45AlertMinute;
-
 
         int SpaceTimeTimer;
 
-        string stockingsAlert = Application.StartupPath + "\\sounds\\stockings.wav\\";
-        string snowBearAlert = Application.StartupPath + "\\sounds\\snowbear.wav\\";
-        string snowCanonAlert = Application.StartupPath + "\\sounds\\snowcanon.wav\\";
-        string namnamnamAlert = Application.StartupPath + "\\sounds\\beesmas feast.wav\\";
-        string candleAlert = Application.StartupPath + "\\sounds\\Candles.wav\\";
-        string festiveWrathAlert = Application.StartupPath + "\\sounds\\wreath.wav\\";
-        string puffshroomAlert = Application.StartupPath + "\\sounds\\puffshrooms.wav\\";
-        string mondoAlert = Application.StartupPath + "\\sounds\\mondo.wav\\";
-        string kickAlert = Application.StartupPath + "\\sounds\\you should move.wav\\";
-        string wealthAlert = Application.StartupPath + "\\sounds\\wealth clock.wav\\";
-        string DEBUGTestAlert = Application.StartupPath + "\\sounds\\test success.wav\\";
-
-
-
-        string startupstockingsAlert = Application.StartupPath + "\\sounds\\stockings.wav\\";
-        string startupsnowBearAlert = Application.StartupPath + "\\sounds\\snowbear.wav\\";
-        string startupsnowCanonAlert = Application.StartupPath + "\\sounds\\snowcanon.wav\\";
-        string startupnamnamnamAlert = Application.StartupPath + "\\sounds\\beesmas feast.wav\\";
-        string startupcandleAlert = Application.StartupPath + "\\sounds\\Candles.wav\\";
-        string startupfestiveWrathAlert = Application.StartupPath + "\\sounds\\wreath.wav\\";
-        string startuppuffshroomAlert = Application.StartupPath + "\\sounds\\puffshrooms.wav\\";
-        string startupmondoAlert = Application.StartupPath + "\\sounds\\mondo.wav\\";
-        string startupkickAlert = Application.StartupPath + "\\sounds\\you should move.wav\\";
-        string startupwealthAlert = Application.StartupPath + "\\sounds\\wealth clock.wav\\";
-        string startupDEBUGTestAlert = Application.StartupPath + "\\sounds\\test success.wav\\";
-
-
+        string snowBearAlert = "https://otto.mauz.name/nextcloud/s/Dg4s5fGA9BTqjoT/download/Snol_Bier.mp3";
+        string stockingsAlert = "https://otto.mauz.name/nextcloud/s/kyncqRBxNnwpjM2/download/Glocken_in_den_socken.mp3";
+        string snowCanonAlert = "https://otto.mauz.name/nextcloud/s/55BBc2pjea6sBgf/download/Snol_Maschine.mp3";
+        string namnamnamAlert = "https://otto.mauz.name/nextcloud/s/o93N6PCy3G6twHS/download/NamNamNam.mp3";
+        string candleAlert = "https://otto.mauz.name/nextcloud/s/jMsJMFWmGQ56i7M/download/candle.mp3";
+        string festiveWrathAlert = "https://otto.mauz.name/nextcloud/s/ZAQjsrQHn6eezRP/download/Festive_Wrath.mp3";
+        string puffshroomAlert = "https://otto.mauz.name/nextcloud/s/cKqwidGSz68R6jF/download";
+        string mondoAlert = "https://otto.mauz.name/nextcloud/s/r2octHQd49pJM3f/download/Mondo_Chick.mp3";
+        string kickAlert = "https://otto.mauz.name/nextcloud/s/5xG58C7Xci7R534/download/kick%20sound.mp3";
+        string wealthAlert = "https://otto.mauz.name/nextcloud/s/gSAKMFPeE8HtcwT/download/Werte_Uhr.mp3";
 
 
         int snowbearTime = 5400;
@@ -81,7 +65,6 @@ namespace Beeswarm_timer_v3
         int festiveWrathTime = 1800;
         int kickTime = 1080;
         int WealthTime = 3600;
-        int DEBUGTestTime = 10;
 
 
         int snowbearYellowTime = 300;
@@ -108,14 +91,7 @@ namespace Beeswarm_timer_v3
         int kickYellowTime = 300;
         int kickRedTime = 120;
 
-        int DEBUGYellowTime = 5;
-        int DEBUGRedTime = 2;
-
-
-        //space the buttons move when icons are enabled
-        int iconsMoveSpace = 35;
-
-
+        
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -145,116 +121,8 @@ namespace Beeswarm_timer_v3
             wrathTimeLeft = festiveWrathTime;
             kickTimeLeft = kickTime;
             WealthClockTimeLeft = WealthTime;
-            DEBUGTestTimeLeft = DEBUGTestTime;
-
-            axWindowsMediaPlayer1.settings.volume = Properties.Settings.Default.Volume;
-            VolumeSlider.Value = Properties.Settings.Default.Volume;
-
             loop.Start();
-
-            //set stockings alert
-            if (Properties.Settings.Default.StockingsAlertURL.Contains("Application.StartupPath") | Properties.Settings.Default.StockingsAlertURL.Contains("reset"))
-            {
-                Properties.Settings.Default.StockingsAlertURL = startupstockingsAlert;
-            }
-            else
-            {
-
-            }
-
-            //set snowbear alert
-            if (Properties.Settings.Default.SnowbearAlertURL.Contains("Application.StartupPath") | Properties.Settings.Default.SnowbearAlertURL.Contains("reset"))
-            {
-                Properties.Settings.Default.SnowbearAlertURL = startupsnowBearAlert;
-            }
-            else
-            {
-
-            }
-
-
-
-            //set candles alert
-            if (Properties.Settings.Default.CandlesAlertURL.Contains("Application.StartupPath") | Properties.Settings.Default.CandlesAlertURL.Contains("reset"))
-            {
-                Properties.Settings.Default.CandlesAlertURL = startupcandleAlert;
-            }
-            else
-            {
-
-            }
-
-
-            //set cannon alert
-            if (Properties.Settings.Default.SnowcanonAlertURL.Contains("Application.StartupPath") | Properties.Settings.Default.SnowcanonAlertURL.Contains("reset"))
-            {
-                Properties.Settings.Default.SnowcanonAlertURL= startupsnowCanonAlert;
-            }
-            else
-            {
-
-            }
-
-
-            //set feast alert
-            if (Properties.Settings.Default.FeastAlertURL.Contains("Application.StartupPath") | Properties.Settings.Default.FeastAlertURL.Contains("reset"))
-            {
-                Properties.Settings.Default.FeastAlertURL = startupnamnamnamAlert;
-            }
-            else
-            {
-
-            }
-
-            //set wreath  alert
-            if (Properties.Settings.Default.WreathAlertURL.Contains("Application.StartupPath") | Properties.Settings.Default.WreathAlertURL.Contains("reset"))
-            {
-                Properties.Settings.Default.WreathAlertURL = startupfestiveWrathAlert;
-            }
-            else
-            {
-
-            }
-
-            //set wealth alert
-            if (Properties.Settings.Default.WealthAlertURL.Contains("Application.StartupPath") | Properties.Settings.Default.WealthAlertURL.Contains("reset"))
-            {
-                Properties.Settings.Default.WealthAlertURL = startupwealthAlert;
-            }
-            else
-            {
-
-            }
-
-            //set kick alert
-            if (Properties.Settings.Default.KickAlertURL.Contains("Application.StartupPath") | Properties.Settings.Default.KickAlertURL.Contains("reset"))
-            {
-                Properties.Settings.Default.KickAlertURL = startupkickAlert;
-            }
-            else
-            {
-
-            }
-
-            //set mondo alert
-            if (Properties.Settings.Default.MondoAlertURL.Contains("Application.StartupPath") | Properties.Settings.Default.MondoAlertURL.Contains("reset"))
-            {
-                Properties.Settings.Default.MondoAlertURL = startupmondoAlert;
-            }
-            else
-            {
-
-            }
-
-            //set puffshroom alert
-            if (Properties.Settings.Default.PuffshroomsAlertURL.Contains("Application.StartupPath") | Properties.Settings.Default.PuffshroomsAlertURL.Contains("reset"))
-            {
-                Properties.Settings.Default.PuffshroomsAlertURL = startuppuffshroomAlert;
-            }
-            else
-            {
-
-            }
+            
 
 
         }
@@ -264,7 +132,7 @@ namespace Beeswarm_timer_v3
             snowBearTimer.Start();
             snowBearTimeLeft = snowbearTime;
             snowBearTimeDisplay.Text = "Started!";
-            ;
+;
 
         }
 
@@ -287,7 +155,7 @@ namespace Beeswarm_timer_v3
 
         private void stockingsTimer_Tick(object sender, EventArgs e)
         {
-            if (stockingsTimeLeft > 0)
+            if(stockingsTimeLeft > 0)
             {
                 stockingsTimeLeft = stockingsTimeLeft - 1;
                 TimeSpan stockingsTimeSpan = TimeSpan.FromSeconds(stockingsTimeLeft);
@@ -300,12 +168,12 @@ namespace Beeswarm_timer_v3
                 stockingsTimeLeft = stockingsTime;
                 SstockingsTimeDisplay.Text = "Ready!";
             }
-
+                  
         }
 
         private void snowCanonTimer_Tick(object sender, EventArgs e)
         {
-            if (snowCanonTimeLeft > 0)
+            if(snowCanonTimeLeft > 0)
             {
                 snowCanonTimeLeft = snowCanonTimeLeft - 1;
                 TimeSpan snowCanonTimeSpan = TimeSpan.FromSeconds(snowCanonTimeLeft);
@@ -314,11 +182,11 @@ namespace Beeswarm_timer_v3
             else
             {
                 snowCanonTimer.Stop();
-                axWindowsMediaPlayer1.URL = snowCanonAlert;
-                snowCanonTimeLeft = snowCanonTime;
+                axWindowsMediaPlayer1.URL=snowCanonAlert;
+                snowCanonTimeLeft=snowCanonTime;
                 snowCanonTimeDIsplay.Text = "Ready!";
             }
-
+                  
         }
 
         private void snowCanonStart_Click(object sender, EventArgs e)
@@ -332,7 +200,7 @@ namespace Beeswarm_timer_v3
         {
             Form2 settingsWindow = new Form2();
             settingsWindow.ShowDialog();
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -344,9 +212,9 @@ namespace Beeswarm_timer_v3
 
         private void namNamTimer_Tick(object sender, EventArgs e)
         {
-            if (namnamTimeLeft > 0)
+            if(namnamTimeLeft > 0)
             {
-                namnamTimeLeft = namnamTimeLeft - 1;
+                namnamTimeLeft = namnamTimeLeft - 1;   
                 TimeSpan namnamTimeSpan = TimeSpan.FromSeconds(namnamTimeLeft);
                 namNamTimeDisplay.Text = namnamTimeSpan.ToString();
             }
@@ -368,7 +236,7 @@ namespace Beeswarm_timer_v3
 
         private void wrathTimeDisplay_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void wrathTimer_Tick(object sender, EventArgs e)
@@ -390,12 +258,12 @@ namespace Beeswarm_timer_v3
 
         private void candledTimer_Tick(object sender, EventArgs e)
         {
-            if (candlesTimeLeft > 0)
+            if(candlesTimeLeft > 0)
             {
 
-                candlesTimeLeft = candlesTimeLeft - 1;
+                candlesTimeLeft = candlesTimeLeft - 1; 
                 TimeSpan candlesTimeSpan = TimeSpan.FromSeconds(candlesTimeLeft);
-                candlesTimeDisplay.Text = candlesTimeSpan.ToString();
+                candlesTimeDisplay.Text=candlesTimeSpan.ToString();
             }
             else
             {
@@ -423,9 +291,9 @@ namespace Beeswarm_timer_v3
             }
             else
             {
-                TopMost = false;
+                TopMost= false;
             }
-
+                   
         }
 
         private void settingswindow1_Load(object sender, EventArgs e)
@@ -451,7 +319,6 @@ namespace Beeswarm_timer_v3
             candledTimer.Stop();
             wrathTimer.Stop();
             kickTimer.Stop();
-            WealthTimer.Stop();
             SstockingsTimeDisplay.Text = "Stopped!";
             snowBearTimeDisplay.Text = "Stopped!";
             snowCanonTimeDIsplay.Text = "Stopped!";
@@ -459,7 +326,6 @@ namespace Beeswarm_timer_v3
             candlesTimeDisplay.Text = "Stopped!";
             wrathTimeDisplay.Text = "Stopped!";
             kickTimeDisplay.Text = "Stopped!";
-            WealthClockTimeDisplay.Text = "Stopped!";
         }
 
         private void nachtModusToolStripMenuItem_Click(object sender, EventArgs e)
@@ -473,9 +339,9 @@ namespace Beeswarm_timer_v3
             else
             {
                 axWindowsMediaPlayer1.settings.volume = 100;
-                NightModeEnabledSign.Visible = false;
+                NightModeEnabledSign.Visible = false;  
             }
-
+             
 
         }
 
@@ -489,7 +355,7 @@ namespace Beeswarm_timer_v3
         private void kickTimer_Tick(object sender, EventArgs e)
         {
 
-            if (kickTimeLeft > 0)
+            if(kickTimeLeft > 0)
             {
                 kickTimeLeft = kickTimeLeft - 1;
                 TimeSpan kickTimeSpan = TimeSpan.FromSeconds(kickTimeLeft);
@@ -500,7 +366,7 @@ namespace Beeswarm_timer_v3
                 kickTimeDisplay.Text = "Move!";
                 kickTimer.Stop();
                 axWindowsMediaPlayer1.URL = kickAlert;
-
+                
 
             }
         }
@@ -523,13 +389,11 @@ namespace Beeswarm_timer_v3
             {
                 trackBar1.Visible = true;
                 OpacityLabel.Visible = true;
-                NightModeEnabledSign.Top = NightModeEnabledSign.Top + 60;
             }
             else
             {
                 trackBar1.Visible = false;
-                OpacityLabel.Visible = false;
-                NightModeEnabledSign.Top = NightModeEnabledSign.Top - 60;
+                OpacityLabel.Visible=false;
             }
         }
 
@@ -552,12 +416,11 @@ namespace Beeswarm_timer_v3
         {
             WealthTimer.Start();
             WealthClockTimeDisplay.Text = "Started!";
-            WealthClockTimeLeft = WealthTime;
         }
 
         private void WealthTimer_Tick(object sender, EventArgs e)
         {
-            if (WealthClockTimeLeft > 0)
+            if(WealthClockTimeLeft > 0)
             {
                 WealthClockTimeLeft = WealthClockTimeLeft - 1;
                 TimeSpan WealthTimeSpan = TimeSpan.FromSeconds(WealthClockTimeLeft);
@@ -636,7 +499,7 @@ namespace Beeswarm_timer_v3
             if (candlesToolStripMenuItem.Checked)
             {
                 candlesStart.Visible = true;
-                candlesTimeDisplay.Visible = true;
+                candlesTimeDisplay.Visible=true;
             }
             else
             {
@@ -677,19 +540,17 @@ namespace Beeswarm_timer_v3
         {
             if (kickTimerToolStripMenuItem.Checked)
             {
-                kickTimeDisplay.Visible = true;
-                kickTimerStart.Visible = true;
-
+                kickTimeDisplay.Visible = true ;
+                kickTimerStart.Visible = true ;
             }
             else
             {
                 kickTimeDisplay.Visible = false;
                 kickTimerStart.Visible = false;
             }
-            clicktomovelabel.Visible = false;
         }
 
-        internal void overlayModeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void overlayModeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (overlayModeToolStripMenuItem.Checked)
             {
@@ -702,16 +563,6 @@ namespace Beeswarm_timer_v3
                 TopBar.Visible = false;
                 this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             }
-            if (alwaysOnTopToolStripMenuItem.Checked)
-            {
-
-            }
-            else
-            {
-                alwaysOnTopToolStripMenuItem.PerformClick();
-            }
-
-            clicktomovelabel.Visible = false;
         }
 
         private void CloseButton_Click(object sender, EventArgs e)
@@ -742,7 +593,7 @@ namespace Beeswarm_timer_v3
 
         private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void PuffMondoTimer_Tick(object sender, EventArgs e)
@@ -751,14 +602,11 @@ namespace Beeswarm_timer_v3
             minute = DateTime.Now.Minute;
             hour = DateTime.Now.Hour;
             Ring_Alarm();
-            DEBUGTimeHour.Text = hour.ToString();
-            DEBUGTimeMinute.Text = minute.ToString();
-            DEBUGTimeSecond.Text = second.ToString();
         }
 
         private void savePreferencesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void showVolumeSliderToolStripMenuItem_Click(object sender, EventArgs e)
@@ -772,16 +620,13 @@ namespace Beeswarm_timer_v3
             else
             {
                 VolumeSlider.Visible = false;
-                VolumeLabel.Visible = false;
+                VolumeLabel.Visible= false;
             }
         }
 
         private void VolumeSlider_Scroll(object sender, EventArgs e)
         {
             axWindowsMediaPlayer1.settings.volume = VolumeSlider.Value;
-            Properties.Settings.Default.Volume = VolumeSlider.Value;
-            Properties.Settings.Default.Save();
-
         }
 
         private void stockingsToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -826,7 +671,7 @@ namespace Beeswarm_timer_v3
 
         private void TopBarLabel_Click(object sender, EventArgs e)
         {
-
+          
         }
 
         private void TopBarLabel_MouseDown(object sender, MouseEventArgs e)
@@ -869,7 +714,7 @@ namespace Beeswarm_timer_v3
 
 
             //SnowBear Coloring
-            if (snowBearTimeLeft > snowbearYellowTime && snowBearTimer.Enabled)
+            if(snowBearTimeLeft > snowbearYellowTime && snowBearTimer.Enabled )
             {
                 snowBearTimeDisplay.ForeColor = System.Drawing.Color.Cyan;
             }
@@ -881,7 +726,7 @@ namespace Beeswarm_timer_v3
             {
                 snowBearTimeDisplay.ForeColor = System.Drawing.Color.Red;
             }
-            else if (snowBearTimeDisplay.Text == "Started!")
+            else if(snowBearTimeDisplay.Text == "Started!")
             {
                 snowBearTimeDisplay.ForeColor = System.Drawing.Color.LightGreen;
             }
@@ -937,11 +782,11 @@ namespace Beeswarm_timer_v3
             {
                 snowCanonTimeDIsplay.ForeColor = System.Drawing.Color.Red;
             }
-            else if (snowCanonTimeDIsplay.Text == "Started!")
+            else if (SstockingsTimeDisplay.Text == "Started!")
             {
                 snowCanonTimeDIsplay.ForeColor = System.Drawing.Color.LightGreen;
             }
-            else if (snowCanonTimeDIsplay.Text == "Ready!")
+            else if (SstockingsTimeDisplay.Text == "Ready!")
             {
                 snowCanonTimeDIsplay.ForeColor = System.Drawing.Color.LightGreen;
             }
@@ -1090,365 +935,24 @@ namespace Beeswarm_timer_v3
                 kickTimeDisplay.ForeColor = System.Drawing.Color.DarkCyan;
             }
 
-
-            //DEBUG test countdown Coloring
-            if (DEBUGTestTimeLeft > DEBUGYellowTime && DEBUGTestCountDownTimer.Enabled)
-            {
-                DEBUGTestCountDownTimeDisplay.ForeColor = System.Drawing.Color.Cyan;
-            }
-            else if (DEBUGTestTimeLeft <= DEBUGYellowTime && DEBUGTestTimeLeft > DEBUGRedTime && DEBUGTestCountDownTimer.Enabled)
-            {
-                DEBUGTestCountDownTimeDisplay.ForeColor = System.Drawing.Color.Yellow;
-            }
-            else if (DEBUGTestTimeLeft <= snowbearRedTime && DEBUGTestTimeLeft >= 0 && DEBUGTestCountDownTimer.Enabled)
-            {
-                DEBUGTestCountDownTimeDisplay.ForeColor = System.Drawing.Color.Red;
-            }
-            else if (DEBUGTestCountDownTimeDisplay.Text == "Started!")
-            {
-                DEBUGTestCountDownTimeDisplay.ForeColor = System.Drawing.Color.LightGreen;
-            }
-            else if (DEBUGTestCountDownTimeDisplay.Text == "SUCCESS!")
-            {
-                DEBUGTestCountDownTimeDisplay.ForeColor = System.Drawing.Color.LightGreen;
-            }
-            else
-            {
-                DEBUGTestCountDownTimeDisplay.ForeColor = System.Drawing.Color.DarkCyan;
-            }
-
-            stockingsTime = Properties.Settings.Default.Stockingstime;
-            snowbearTime = Properties.Settings.Default.SnowbearTime;
-            snowCanonTime = Properties.Settings.Default.SnowcanonTime;
-            namnamTime = Properties.Settings.Default.BeesmasFeastTime;
-            candleTime = Properties.Settings.Default.CandlesTime;
-            festiveWrathTime = Properties.Settings.Default.WreathTime;
-            WealthTime = Properties.Settings.Default.WealthTime;
-            kickTime = Properties.Settings.Default.KickTime;
-            MondoAlertMinute = Properties.Settings.Default.MondoTimeMinute;
-            puffshroom15AlertMinute = Properties.Settings.Default.Puffshroom15minute;
-            puffshroom45AlertMinute = Properties.Settings.Default.Puffshroom45minute;
-
-            stockingsAlert = Properties.Settings.Default.StockingsAlertURL;
-            snowBearAlert = Properties.Settings.Default.StockingsAlertURL;
-            snowCanonAlert = Properties.Settings.Default.SnowcanonAlertURL;
-            namnamnamAlert = Properties.Settings.Default.FeastAlertURL;
-            candleAlert = Properties.Settings.Default.CandlesAlertURL;
-            festiveWrathAlert = Properties.Settings.Default.WreathAlertURL;
-            wealthAlert = Properties.Settings.Default.WealthAlertURL;
-            kickAlert = Properties.Settings.Default.KickAlertURL;
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (DEBUGSoundDropdown.Text == "Stockings")
-            {
-                axWindowsMediaPlayer1.URL = stockingsAlert;
-            }
-            if (DEBUGSoundDropdown.Text == "Snowbear")
-            {
-                axWindowsMediaPlayer1.URL = snowBearAlert;
-            }
-            if (DEBUGSoundDropdown.Text == "Snow Canon")
-            {
-                axWindowsMediaPlayer1.URL = snowCanonAlert;
-            }
-            if (DEBUGSoundDropdown.Text == "Beesmas feast")
-            {
-                axWindowsMediaPlayer1.URL = namnamnamAlert;
-            }
-            if (DEBUGSoundDropdown.Text == "Candles")
-            {
-                axWindowsMediaPlayer1.URL = candleAlert;
-            }
-            if (DEBUGSoundDropdown.Text == "Wreath")
-            {
-                axWindowsMediaPlayer1.URL = festiveWrathAlert;
-            }
-            if (DEBUGSoundDropdown.Text == "Wealth Clock")
-            {
-                axWindowsMediaPlayer1.URL = wealthAlert;
-            }
-            if (DEBUGSoundDropdown.Text == "Kick timer")
-            {
-                axWindowsMediaPlayer1.URL = kickAlert;
-            }
-            if (DEBUGSoundDropdown.Text == "Puffshroom")
-            {
-                axWindowsMediaPlayer1.URL = puffshroomAlert;
-            }
-            if (DEBUGSoundDropdown.Text == "Mondo")
-            {
-                axWindowsMediaPlayer1.URL = mondoAlert;
-            }
-
-
-
-        }
-
-        private void DEBUGplayButton_Click(object sender, EventArgs e)
-        {
-            if (DEBUGSoundDropdown.Text == "Stockings")
-            {
-                axWindowsMediaPlayer1.URL = stockingsAlert;
-            }
-            if (DEBUGSoundDropdown.Text == "Snowbear")
-            {
-                axWindowsMediaPlayer1.URL = snowBearAlert;
-            }
-            if (DEBUGSoundDropdown.Text == "Snow Canon")
-            {
-                axWindowsMediaPlayer1.URL = snowCanonAlert;
-            }
-            if (DEBUGSoundDropdown.Text == "Beesmas feast")
-            {
-                axWindowsMediaPlayer1.URL = namnamnamAlert;
-            }
-            if (DEBUGSoundDropdown.Text == "Candles")
-            {
-                axWindowsMediaPlayer1.URL = candleAlert;
-            }
-            if (DEBUGSoundDropdown.Text == "Wreath")
-            {
-                axWindowsMediaPlayer1.URL = festiveWrathAlert;
-            }
-            if (DEBUGSoundDropdown.Text == "Wealth Clock")
-            {
-                axWindowsMediaPlayer1.URL = wealthAlert;
-            }
-            if (DEBUGSoundDropdown.Text == "Kick timer")
-            {
-                axWindowsMediaPlayer1.URL = kickAlert;
-            }
-            if (DEBUGSoundDropdown.Text == "Puffshroom")
-            {
-                axWindowsMediaPlayer1.URL = puffshroomAlert;
-            }
-            if (DEBUGSoundDropdown.Text == "Mondo")
-            {
-                axWindowsMediaPlayer1.URL = mondoAlert;
-            }
-        }
-
-        private void DEBUGTestCountDownTimer_Tick(object sender, EventArgs e)
-        {
-            if (DEBUGTestTimeLeft > 0)
-            {
-                DEBUGTestTimeLeft = DEBUGTestTimeLeft - 1;
-                TimeSpan DEBUGTestTimeSpan = TimeSpan.FromSeconds(DEBUGTestTimeLeft);
-                DEBUGTestCountDownTimeDisplay.Text = DEBUGTestTimeSpan.ToString();
-            }
-            else
-            {
-                DEBUGTestCountDownTimer.Stop();
-                axWindowsMediaPlayer1.URL = DEBUGTestAlert;
-                DEBUGTestTimeLeft = DEBUGTestTime;
-                DEBUGTestCountDownTimeDisplay.Text = "SUCCESS!";
-            }
-        }
-
-        private void DEBUGTestCountDownStart_Click(object sender, EventArgs e)
-        {
-            DEBUGTestCountDownTimer.Start();
-            DEBUGTestCountDownTimeDisplay.Text = "Started!";
-
-        }
-
-        private void debugModeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (debugModeToolStripMenuItem.Checked)
-            {
-                DEBUGTestCountDownTimeDisplay.Visible = true;
-                DEBUGTestCountDownStart.Visible = true;
-                DEBUGTimeHour.Visible = true;
-                DEBUGTimeMinute.Visible = true;
-                DEBUGTimeSecond.Visible = true;
-                DEBUGSoundDropdown.Visible = true;
-                DEBUGplayButton.Visible = true;
-                DEBUGDoppelpunkt.Visible = true;
-                DEBUGDoppelpunkt2.Visible = true;
-                DEBUGEnabledLabel.Visible = true;
-                axWindowsMediaPlayer1.Visible = true;
-                DEBUGTimeLabel.Visible = true;
-                DEBUGTestCountDownLabel.Visible = true;
-
-
-            }
-            else
-            {
-                DEBUGTestCountDownTimeDisplay.Visible = false;
-                DEBUGTestCountDownStart.Visible = false;
-                DEBUGTimeHour.Visible = false;
-                DEBUGTimeMinute.Visible = false;
-                DEBUGTimeSecond.Visible = false;
-                DEBUGSoundDropdown.Visible = false;
-                DEBUGplayButton.Visible = false;
-                DEBUGDoppelpunkt.Visible = false;
-                DEBUGDoppelpunkt2.Visible = false;
-                DEBUGEnabledLabel.Visible = false;
-                axWindowsMediaPlayer1.Visible = false;
-                DEBUGTimeLabel.Visible = false;
-                DEBUGTestCountDownLabel.Visible = false;
-            }
-        }
-
-        private void DEBUGEnabledLabel_Click(object sender, EventArgs e)
-        {
-            debugModeToolStripMenuItem.Checked = false;
-            DEBUGTestCountDownTimeDisplay.Visible = false;
-            DEBUGTestCountDownStart.Visible = false;
-            DEBUGTimeHour.Visible = false;
-            DEBUGTimeMinute.Visible = false;
-            DEBUGTimeSecond.Visible = false;
-            DEBUGSoundDropdown.Visible = false;
-            DEBUGplayButton.Visible = false;
-            DEBUGDoppelpunkt.Visible = false;
-            DEBUGDoppelpunkt2.Visible = false;
-            DEBUGEnabledLabel.Visible = false;
-            axWindowsMediaPlayer1.Visible = false;
-            DEBUGTimeLabel.Visible = false;
-            DEBUGTestCountDownLabel.Visible = false;
-        }
-
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            {
-
-                Form3 Form3 = new Form3();
-                Form3.ShowDialog();
-            }
-        }
-
-        private void reportABugToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            bugReportWindows bugWindow = new bugReportWindows();
-           bugWindow.ShowDialog();
-        }
-
-        private void iconsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (iconsToolStripMenuItem.Checked)
-            {
-                
-                StokingsTimerStart.Left = StokingsTimerStart.Left + iconsMoveSpace;
-                snowBearTimerStart.Left = snowBearTimerStart.Left + iconsMoveSpace;
-                snowCanonStart.Left = snowCanonStart.Left + iconsMoveSpace;
-                namNamNamStart.Left = namNamNamStart.Left + iconsMoveSpace;
-                candlesStart.Left = candlesStart.Left + iconsMoveSpace;
-                button1.Left = button1.Left + iconsMoveSpace;
-                WealthClokStart.Left = WealthClokStart.Left + iconsMoveSpace;
-                kickTimerStart.Left = kickTimerStart.Left + iconsMoveSpace;
-                VolumeSlider.Left = VolumeSlider.Left + iconsMoveSpace;
-                
-
-
-                SstockingsTimeDisplay.Left = SstockingsTimeDisplay.Left + iconsMoveSpace;
-                snowBearTimeDisplay.Left = snowBearTimeDisplay.Left + iconsMoveSpace;
-                snowCanonTimeDIsplay.Left = snowCanonTimeDIsplay.Left + iconsMoveSpace;
-                namNamTimeDisplay.Left = namNamTimeDisplay.Left + iconsMoveSpace;
-                candlesTimeDisplay.Left = candlesTimeDisplay.Left + iconsMoveSpace;
-                wrathTimeDisplay.Left = wrathTimeDisplay.Left + iconsMoveSpace;
-                WealthClockTimeDisplay.Left = WealthClockTimeDisplay.Left + iconsMoveSpace;
-                kickTimeDisplay.Left = kickTimeDisplay.Left + iconsMoveSpace;  
-                VolumeLabel.Left = VolumeLabel.Left + iconsMoveSpace;
-
-                StockingsImageBox.Visible = true;
-                SnowbearImageBox.Visible = true;
-                SnowCanonImageBox.Visible = true;
-                namNamImageBox.Visible = true;
-                candlesImageBox.Visible = true;
-                WrathImageBox.Visible = true;
-                WealthImageBox.Visible = true;
-
-
-            }
-            else
-            {
-                StokingsTimerStart.Left = StokingsTimerStart.Left - iconsMoveSpace;
-                snowBearTimerStart.Left = snowBearTimerStart.Left - iconsMoveSpace;
-                snowCanonStart.Left = snowCanonStart.Left - iconsMoveSpace;
-                namNamNamStart.Left = namNamNamStart.Left - iconsMoveSpace;
-                candlesStart.Left = candlesStart.Left - iconsMoveSpace;
-                button1.Left = button1.Left - iconsMoveSpace;
-                WealthClokStart.Left = WealthClokStart.Left - iconsMoveSpace;
-                kickTimerStart.Left = kickTimerStart.Left - iconsMoveSpace;
-                VolumeSlider.Left = VolumeSlider.Left - iconsMoveSpace;
-
-
-                SstockingsTimeDisplay.Left = SstockingsTimeDisplay.Left - iconsMoveSpace;
-                snowBearTimeDisplay.Left = snowBearTimeDisplay.Left - iconsMoveSpace;
-                snowCanonTimeDIsplay.Left = snowCanonTimeDIsplay.Left - iconsMoveSpace;
-                namNamTimeDisplay.Left = namNamTimeDisplay.Left - iconsMoveSpace;
-                candlesTimeDisplay.Left = candlesTimeDisplay.Left - iconsMoveSpace;
-                wrathTimeDisplay.Left = wrathTimeDisplay.Left - iconsMoveSpace;
-                WealthClockTimeDisplay.Left = WealthClockTimeDisplay.Left - iconsMoveSpace;
-                kickTimeDisplay.Left = kickTimeDisplay.Left - iconsMoveSpace;
-                VolumeLabel.Left = VolumeLabel.Left - iconsMoveSpace;
-
-
-                StockingsImageBox.Visible = false;
-                SnowbearImageBox.Visible = false;
-                SnowCanonImageBox.Visible = false;
-                namNamImageBox.Visible = false;
-                candlesImageBox.Visible = false;
-                WrathImageBox.Visible = false;
-                WealthImageBox.Visible = false;
-            }
-        }
-
-        private void WealthImageBox_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-            clicktomovelabel.Visible = false;
-
-        }
-
-        private void label1_MouseClick(object sender, MouseEventArgs e)
-        {
-            clicktomovelabel.Visible = false;
-        }
-
-        private void label1_MouseHover(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_MouseDown(object sender, MouseEventArgs e)
-        {
-            clicktomovelabel.Visible = false;
-            if (e.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-            }
-        }
-
-        private void guideToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://github.com/AudioCrafter/Bee-Swarm-Addons/blob/master/README.md");
         }
 
         void Ring_Alarm()
         {
             //Mondo
-            if (minute == MondoAlertMinute && second == 0 && mondoToolStripMenuItem.Checked && nachtModusToolStripMenuItem.Checked == false)
+            if (minute == 56 && second == 59 && mondoToolStripMenuItem.Checked && nachtModusToolStripMenuItem.Checked == false)
             {
                 axWindowsMediaPlayer1.URL = mondoAlert;
             };
 
             //Puffshroom XX:15 Uhr
-            if (minute == puffshroom15AlertMinute && second == 00 && puffshroomsXX15UhrToolStripMenuItem.Checked && nachtModusToolStripMenuItem.Checked == false)
+            if (minute == 14 && second == 59 && puffshroomsXX15UhrToolStripMenuItem.Checked && nachtModusToolStripMenuItem.Checked == false)
             {
                 axWindowsMediaPlayer1.URL = puffshroomAlert;
             };
 
             //Puffshroom XX:45 Uhr
-            if (minute == puffshroom45AlertMinute && second == 00 && puffshroomsXX45UhrToolStripMenuItem.Checked && nachtModusToolStripMenuItem.Checked == false)
+            if (minute == 44 && second == 59 && puffshroomsXX45UhrToolStripMenuItem.Checked && nachtModusToolStripMenuItem.Checked == false)
             {
                 axWindowsMediaPlayer1.URL = puffshroomAlert;
             };
@@ -1456,7 +960,7 @@ namespace Beeswarm_timer_v3
 
         public void GetSettings()
         {
-
+            
         }
     }
 }
