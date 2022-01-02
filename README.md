@@ -1,3 +1,9 @@
+# How to install
+
+1. Download the latest release file from the file section on the top of the page or from [here](https://github.com/AudioCrafter/Bee-Swarm-Addons/raw/master/Beeswarm%20Addons%20Installer1.3.0.msi)
+2. open the ``Beeswarm Addons Installer.msi`` file
+3. Follow the setup guide
+
 # Features
 
 - timers for: ``Stockings, Snowbear, Snow Canon, Beesmas Feast, Candles, Honey Wreath, Wealth clock, 20 minutes kick timer``.
@@ -33,11 +39,7 @@ Alerts play when puffshrooms spawn at XX:15 and XX:45. (can be disabled in Setti
 Removes the top bar, toggels always on top mode.
 
 
-# How to install
 
-1. Download the latest release file from the file section on the top of the page or from [here](https://github.com/AudioCrafter/Bee-Swarm-Addons/raw/master/Beeswarm%20Addons%20Installer1.2.2.msi)
-2. open the ``Beeswarm Addons Installer.msi`` file
-3. Follow the setup guide
 
 
 # How to use
