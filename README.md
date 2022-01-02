@@ -1,12 +1,14 @@
-# How to install
+# !!How to install!!
 
 1. Download the latest release file from the file section on the top of the page or from [here](https://github.com/AudioCrafter/Bee-Swarm-Addons/raw/master/Beeswarm%20Addons%20Installer1.3.0.msi)
 2. open the ``Beeswarm Addons Installer.msi`` file
-3. Follow the setup guide
+3. Windows may say the program is malicious, you can just ignore this. (you can look at the code in the [source code](https://github.com/AudioCrafter/Bee-Swarm-Addons/tree/master/source%20code), and compile it by yourself if you want.) 
+4. Follow the setup guide
+
 
 # Features
 
-- timers for: ``Stockings, Snowbear, Snow Canon, Beesmas Feast, Candles, Honey Wreath, Wealth clock, 20 minutes kick timer``.
+- timers for: ``Stockings, Snowbear, Snow Canon, Beesmas Feast, Candles, Honey Wreath, Wealth clock, Memory Matches, 20 minutes kick timer``.
 - Alerts for: ``Puffshrooms, Mondo chick``
 - Overlay Mode 
 - night mode (mutes sounds)
@@ -14,11 +16,11 @@
 - Opacity Control
 - Debug Mode to test sounds, timers 
 
-![demoInage](https://cdn.discordapp.com/attachments/725622009907642420/925971092005351474/unknown.png)
+![demoInage](https://cdn.discordapp.com/attachments/725622009907642420/926973853945712660/unknown.png)
 
 
 # Explanation of the Features 
-- Stockings, Snowbear, Snow Canon, Beesmas Feast, Candles, Honey Wreath, Wealth clock: 
+- Stockings, Snowbear, Snow Canon, Beesmas Feast, Candles, Honey Wreath, Wealth clock, Memory Math Timers: 
 
 Timer until the ingame actions are ready to be done again, for every timer a specific alert gets played when it hits 0.
 
@@ -75,7 +77,6 @@ Removes the top bar, toggels always on top mode.
 - ***Show Opacity slider***:  Shows / Hides Opacity control.
 - ***Night mode***:           Mutes all sound for eg. macroing overnight. 
 - ***Visibility***:           Show / Hide single timers.
-- ***Icons***:                Shows / Hides Icons left to the buttons.
 
 ### Debug: 
 
@@ -90,5 +91,5 @@ Removes the top bar, toggels always on top mode.
 - ***player***:               Windows mediaplayer integration.
 
 
-![DebugImage](https://cdn.discordapp.com/attachments/725622009907642420/925971328677314610/unknown.png)
+![DebugImage](https://cdn.discordapp.com/attachments/725622009907642420/926974098192629870/unknown.png)
 
