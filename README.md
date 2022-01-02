@@ -50,6 +50,7 @@ Removes the top bar, toggels always on top mode.
 ### - Timers:
 
 (step 2 and 3 can be swapped)
+0. Start the program in your windows menu 
 
 1. in Beeswarm, go for example to to the Beesmas Feast
 
