@@ -1,5 +1,6 @@
 # !!How to install!!
 
+0. you may have to uninstall older versions when updating. Addon will be updates somewhat regularly 
 1. Download the latest release file from the file section on the top of the page or from [here](https://github.com/AudioCrafter/Bee-Swarm-Addons/raw/master/Beeswarm%20Addons%20Installer1.3.0.msi)
 2. open the ``Beeswarm Addons Installer.msi`` file
 3. Windows may say the program is malicious, you can just ignore this. (you can look at the code in the [source code](https://github.com/AudioCrafter/Bee-Swarm-Addons/tree/master/source%20code), and compile it by yourself if you want.) 
