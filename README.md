@@ -1,7 +1,11 @@
 # !!How to install!!
 
 0. you may have to uninstall older versions when updating. Addon will be updated somewhat regularly 
+<<<<<<< HEAD
 1. Download the latest release file from the file section on the top of the page or from [here](https://github.com/AudioCrafter/Bee-Swarm-Addons/raw/master/Beeswarm%20Addons%20Installer1.3.0.msi)
+=======
+1. Download the latest release file from the file section on the top of the page or from [here](https://github.com/AudioCrafter/Bee-Swarm-Addons/raw/master/Beeswarm%20Addons%20Installer1.3.2.msi)
+>>>>>>> 1a1b88b561f58a22bcbec7e058be40913aefdcab
 2. open the ``Beeswarm Addons Installer.msi`` file
 3. Windows may say the program is malicious, you can just ignore this. (you can look at the code in the [source code](https://github.com/AudioCrafter/Bee-Swarm-Addons/tree/master/source%20code), and compile it by yourself if you want.) 
 4. Follow the setup guide
@@ -50,6 +54,7 @@ Removes the top bar, toggels always on top mode.
 ### - Timers:
 
 (step 2 and 3 can be swapped)
+0. Start the program from your windows menu 
 
 1. in Beeswarm, go for example to to the Beesmas Feast
 
