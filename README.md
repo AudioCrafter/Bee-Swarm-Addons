@@ -14,7 +14,7 @@ if you need help you can join the [BSA Discord](https://discord.gg/PPRFY5qvFv)
 2. wait until the new version is downloaded.
 3. Follow the setup guide.
 
-![updateimage](https://cdn.discordapp.com/attachments/725622009907642420/927388559881695273/unknown.png)
+![updateimage](https://cdn.discordapp.com/attachments/725622009907642420/927393880104636456/unknown.png)
 
 # Features
 
