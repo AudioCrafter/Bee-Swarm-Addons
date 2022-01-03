@@ -1,3 +1,5 @@
+if you need help you can join the [BSA Discord](https://discord.gg/PPRFY5qvFv)
+
 # !!How to install!!
 
 0. you may have to uninstall older versions when updating. Addon will be updated somewhat regularly 
