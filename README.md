@@ -7,6 +7,13 @@
 4. Follow the setup guide
 
 
+#How to Update:
+1. Go to Help > Search for updates.
+[updateimage](https://cdn.discordapp.com/attachments/725622009907642420/927388559881695273/unknown.png)
+2. wait until the new version is downloaded.
+3. Follow the setup guide.
+
+
 # Features
 
 - timers for: ``Stockings, Snowbear, Snow Canon, Beesmas Feast, Candles, Honey Wreath, Wealth clock, Memory Matches, 20 minutes kick timer``.
