@@ -11,10 +11,10 @@ if you need help you can join the [BSA Discord](https://discord.gg/PPRFY5qvFv)
 
 # How to Update
 1. Go to Help > Search for updates.
-![updateimage](https://cdn.discordapp.com/attachments/725622009907642420/927388559881695273/unknown.png)
 2. wait until the new version is downloaded.
 3. Follow the setup guide.
 
+![updateimage](https://cdn.discordapp.com/attachments/725622009907642420/927388559881695273/unknown.png)
 
 # Features
 
