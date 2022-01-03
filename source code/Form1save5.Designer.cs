@@ -1460,7 +1460,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "BeeswarmAddonsV1";
-            this.Text = "Beeswarm Addons V1.4.0";
+            this.Text = "Beeswarm Addons V1.4.1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BeeswarmAddonsV1_MouseDown);
             this.menuStrip1.ResumeLayout(false);

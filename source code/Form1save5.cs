@@ -15,6 +15,7 @@ namespace Beeswarm_timer_v3
         WebClient webCl = new WebClient();
 
 
+        
 
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -175,6 +176,32 @@ namespace Beeswarm_timer_v3
         private void Form1_Load(object sender, EventArgs e)
         {
 
+
+            //load colors
+            //is.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorMainWindowBG);
+            //tockingsTimeDisplay.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorMainWindowBG);
+            //owBearTimeDisplay.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorMainWindowBG);
+            //owCanonTimeDIsplay.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorMainWindowBG);
+            //mNamTimeDisplay.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorMainWindowBG);
+            //ndlesTimeDisplay.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorMainWindowBG);
+            //athTimeDisplay.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorMainWindowBG);
+            //althClockTimeDisplay.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorMainWindowBG);
+            //nbeesMemoyMatchTimeDisplay.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorMainWindowBG);
+            //vteenbeesMemoyMatchTimeDisplay.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorMainWindowBG);
+            //irtyfivebeesMemoyMatchTimeDisplay.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorMainWindowBG);
+            //ghtMemoyMatchTimeDisplay.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorMainWindowBG);
+            //ckTimeDisplay.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorMainWindowBG);
+            //pBar.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorMainWindowBG);
+            //nuStrip1.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorMainWindowBG);
+
+            //StokingsTimerStart.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorButtons);
+            //snowBearTimerStart.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorButtons);
+            //snowCanonStart.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorButtons);
+            //namNamNamStart.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorButtons);
+            //candlesStart.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorButtons);
+            //button1.BackColor = System.Drawing.ColorTranslator.FromHtml(Properties.Settings.Default.colorButtons);
+
+
             snowBearTimeLeft = snowbearTime;
             stockingsTimeLeft = stockingsTime;
             snowCanonTimeLeft = snowCanonTime;
@@ -198,31 +225,7 @@ namespace Beeswarm_timer_v3
 
 
 
-            Random randomNumberForUpdateFile = new Random();
-            int randomNumbergen = randomNumberForUpdateFile.Next();
-            webCl.DownloadFile("https://raw.githubusercontent.com/AudioCrafter/testgit/main/versioninfo.txt", "C:\\temp\\FileVersionInfo" + randomNumbergen + ".txt");
-            string newestversion = System.IO.File.ReadAllText("C:\\temp\\FileVersionInfo" + randomNumbergen + ".txt");
-
-            string thisver = this.ProductVersion;
-            string gitver = newestversion;
-
-            var localversion = new Version(thisver);
-            var gitnewestversion = new Version(gitver);
-
-
-
-            if (localversion < gitnewestversion)
-            {
-                if (MessageBox.Show("There is a new version of Bee Swarm Addons Available. Do you want to install it?", "Update available!", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                {
-                    webCl.DownloadFile("https://github.com/AudioCrafter/Bee-Swarm-Addons/raw/master/Beeswarm%20Addons%20Installer%20latest.msi", "C:\\temp\\BSAUpdate.msi");
-                    Process.Start("C:\\temp\\BSAUpdate.msi");
-                    this.Close();
-                }
-
-
-
-            }
+            
 
 
 
@@ -1348,8 +1351,7 @@ namespace Beeswarm_timer_v3
             else
             {
                 candlesTimeDisplay.ForeColor = System.Drawing.Color.DarkCyan;
-            }
-
+            }        
 
 
 
@@ -2321,8 +2323,8 @@ namespace Beeswarm_timer_v3
 
             Random randomNumberForUpdateFile = new Random();
             int randomNumbergen = randomNumberForUpdateFile.Next();
-            webCl.DownloadFile("https://raw.githubusercontent.com/AudioCrafter/testgit/main/versioninfo.txt", "C:\\temp\\FileVersionInfo" + randomNumbergen + ".txt");
-            string newestversion = System.IO.File.ReadAllText("C:\\temp\\FileVersionInfo" + randomNumbergen + ".txt");
+            webCl.DownloadFile("https://raw.githubusercontent.com/AudioCrafter/testgit/main/versioninfo.txt", System.IO.Path.GetTempPath() + "\\FileVersionInfo" + randomNumbergen + ".txt");
+            string newestversion = System.IO.File.ReadAllText(System.IO.Path.GetTempPath() + "\\FileVersionInfo" + randomNumbergen + ".txt");
 
             string thisver = this.ProductVersion;
             string gitver = newestversion;
@@ -2336,8 +2338,8 @@ namespace Beeswarm_timer_v3
             {
                 if (MessageBox.Show("There is a new version of Bee Swarm Addons Available. Do you want to install it?", "Update available!", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    webCl.DownloadFile("https://github.com/AudioCrafter/Bee-Swarm-Addons/raw/master/Beeswarm%20Addons%20Installer%20latest.msi", "C:\\temp\\BSAUpdate.msi");
-                    Process.Start("C:\\temp\\BSAUpdate.msi");
+                    webCl.DownloadFile("https://github.com/AudioCrafter/Bee-Swarm-Addons/raw/master/Beeswarm%20Addons%20Installer%20latest.msi", System.IO.Path.GetTempPath() + "\\BSAUpdate.msi");
+                    Process.Start(System.IO.Path.GetTempPath() + "\\BSAUpdate.msi");
                     this.Close();
                 }
 
@@ -2352,7 +2354,7 @@ namespace Beeswarm_timer_v3
             {
                 MessageBox.Show("Somehow you have a newer version than on github?");
             }
-            System.IO.File.Delete("C:\\temp\\FileVersionInfo" + randomNumbergen + ".txt");
+            System.IO.File.Delete(System.IO.Path.GetTempPath() + "\\FileVersionInfo" + randomNumbergen + ".txt");
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)

@@ -7,7 +7,7 @@
     <ProjectGuid>{38C3078C-BE6E-49E3-AFF8-7CF6C0212BCB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Beeswarm_timer_v3</RootNamespace>
-    <AssemblyName>Beeswarm Addons v1.4.0</AssemblyName>
+    <AssemblyName>Beeswarm Addons v1.4.1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -24,7 +24,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.4.0.%2a</ApplicationVersion>
+    <ApplicationVersion>1.4.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
