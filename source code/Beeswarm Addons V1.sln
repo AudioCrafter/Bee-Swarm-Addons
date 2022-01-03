@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32002.185
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beeswarm Addons V1", "Beeswarm Addons V1.csproj", "{38C3078C-BE6E-49E3-AFF8-7CF6C0212BCB}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Beeswarm addons installer", "..\Beeswarm addons installer\Beeswarm addons installer.vdproj", "{489217FA-E0A8-4598-95AD-277B3B035D8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38C3078C-BE6E-49E3-AFF8-7CF6C0212BCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38C3078C-BE6E-49E3-AFF8-7CF6C0212BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38C3078C-BE6E-49E3-AFF8-7CF6C0212BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38C3078C-BE6E-49E3-AFF8-7CF6C0212BCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{489217FA-E0A8-4598-95AD-277B3B035D8A}.Debug|Any CPU.ActiveCfg = Debug
+		{489217FA-E0A8-4598-95AD-277B3B035D8A}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C4AF783-FDFD-4495-B06C-EE1B43FE6D55}
+	EndGlobalSection
+EndGlobal

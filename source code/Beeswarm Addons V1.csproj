@@ -7,7 +7,7 @@
     <ProjectGuid>{38C3078C-BE6E-49E3-AFF8-7CF6C0212BCB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Beeswarm_timer_v3</RootNamespace>
-    <AssemblyName>Beeswarm Addons v1.2.1</AssemblyName>
+    <AssemblyName>Beeswarm Addons v1.4.0</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -23,8 +23,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>11</ApplicationRevision>
-    <ApplicationVersion>1.2.2.%2a</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.4.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -86,11 +86,11 @@
     <Compile Include="bugReportWindows.Designer.cs">
       <DependentUpon>bugReportWindows.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1save4.cs">
+    <Compile Include="Form1save5.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1save4.Designer.cs">
-      <DependentUpon>Form1save4.cs</DependentUpon>
+    <Compile Include="Form1save5.Designer.cs">
+      <DependentUpon>Form1save5.cs</DependentUpon>
     </Compile>
     <Compile Include="Form2save4.cs">
       <SubType>Form</SubType>
@@ -121,8 +121,8 @@
     <EmbeddedResource Include="bugReportWindows.resx">
       <DependentUpon>bugReportWindows.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1save4.resx">
-      <DependentUpon>Form1save4.cs</DependentUpon>
+    <EmbeddedResource Include="Form1save5.resx">
+      <DependentUpon>Form1save5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2save4.resx">
       <DependentUpon>Form2save4.cs</DependentUpon>
